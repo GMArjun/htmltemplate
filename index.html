@@ -6,11 +6,1026 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <title>Classya Home</title>
     <link rel="stylesheet" href="./assets/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/styles/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
 
 <body>
-Hello All
+    <!-- Header -->
+    <header class="position-sticky top-0 bg-white">
+        <div class="container-xl px-4 px-xl-0">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand fw-bolder fs-1" href="#">
+                    LOGO
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container-xl px-4 px-xl-0">
+            <div class="row g-4 mt-5">
+                <h3 class="fw-bolder">Products</h3>
+                <div class="col-12 col-lg-2">
+                    <a href="#" class="card product-card border-0">
+                        <div class="product-card-image ratio ratio-1x1 position-relative overflow-hidden rounded-4">
+                            <div class="favorite-btn">
+                                <input type="checkbox" id="favorite-1" class="btn-check">
+                                <label class="btn border-0 p-2" for="favorite-1">
+                                    <i data-feather="heart" width="24" height="24"></i>
+                                </label>
+                            </div>
+                            <img src="./assets/images/dummy/sample2.jpeg" alt="Luxury Apartment"
+                                class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                        </div>
+                        <div class="card-body px-0 py-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span class="fw-bolder">
+                                    <span class="fs-4">$1500</span> / Day
+                                </span>
+                                <span class="d-flex align-items-center font-merriweather">
+                                    <i data-feather="star" width="16" height="16" class="rating-star"></i>
+                                    <span class="fw-bold ms-1">4.8</span>
+                                </span>
+                            </div>
+                            <div class="d-flex align-items-center text-secondary py-1">
+                                <i data-feather="map-pin" width="16" height="16"></i>
+                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                                    Manhattan, New York
+                                </span>
+                            </div>
+                            <p class="font-merriweather fs-7 text-truncate-2">Luxurious apartment with stunning city
+                                views. Perfect for a romantic getaway or business trip in the heart of New York City.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <a href="#" class="card product-card border-0">
+                        <div class="product-card-image ratio ratio-1x1 position-relative overflow-hidden rounded-4">
+                            <div class="favorite-btn">
+                                <input type="checkbox" id="favorite-2" class="btn-check">
+                                <label class="btn border-0 p-2" for="favorite-2">
+                                    <i data-feather="heart" width="24" height="24"></i>
+                                </label>
+                            </div>
+                            <img src="./assets/images/dummy/sample3.jpeg" alt="Mountain Chalet"
+                                class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                        </div>
+                        <div class="card-body px-0 py-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span class="fw-bolder">
+                                    <span class="fs-4">$200</span> / Day
+                                </span>
+                                <span class="d-flex align-items-center font-merriweather">
+                                    <i data-feather="star" width="16" height="16" class="rating-star"></i>
+                                    <span class="fw-bold ms-1">4.7</span>
+                                </span>
+                            </div>
+                            <div class="d-flex align-items-center text-secondary py-1">
+                                <i data-feather="map-pin" width="16" height="16"></i>
+                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                                    Aspen, Colorado
+                                </span>
+                            </div>
+                            <p class="font-merriweather fs-7 text-truncate-2">Cozy mountain chalet with panoramic views
+                                of the Rockies. Perfect for ski enthusiasts and nature lovers seeking a peaceful
+                                retreat.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <a href="#" class="card product-card border-0">
+                        <div class="product-card-image ratio ratio-1x1 position-relative overflow-hidden rounded-4">
+                            <div class="favorite-btn">
+                                <input type="checkbox" id="favorite-3" class="btn-check">
+                                <label class="btn border-0 p-2" for="favorite-3">
+                                    <i data-feather="heart" width="24" height="24"></i>
+                                </label>
+                            </div>
+                            <img src="./assets/images/dummy/sample1.jpeg" alt="Beachfront Villa"
+                                class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                        </div>
+                        <div class="card-body px-0 py-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span class="fw-bolder">
+                                    <span class="fs-4">$300</span> / Day
+                                </span>
+                                <span class="d-flex align-items-center font-merriweather">
+                                    <i data-feather="star" width="16" height="16" class="rating-star"></i>
+                                    <span class="fw-bold ms-1">4.9</span>
+                                </span>
+                            </div>
+                            <div class="d-flex align-items-center text-secondary py-1">
+                                <i data-feather="map-pin" width="16" height="16"></i>
+                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                                    Malibu, California
+                                </span>
+                            </div>
+                            <p class="font-merriweather fs-7 text-truncate-2">Breathtaking beachfront villa with private
+                                access to the ocean. Ideal for family vacations or intimate beach weddings.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <a href="#" class="card product-card border-0">
+                        <div class="product-card-image ratio ratio-1x1 position-relative overflow-hidden rounded-4">
+                            <div class="favorite-btn">
+                                <input type="checkbox" id="favorite-4" class="btn-check">
+                                <label class="btn border-0 p-2" for="favorite-4">
+                                    <i data-feather="heart" width="24" height="24"></i>
+                                </label>
+                            </div>
+                            <img src="https://placehold.co/100x100" alt="Rustic Cabin"
+                                class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                        </div>
+                        <div class="card-body px-0 py-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span class="fw-bolder">
+                                    <span class="fs-4">$150</span> / Day
+                                </span>
+                                <span class="d-flex align-items-center font-merriweather">
+                                    <i data-feather="star" width="16" height="16" class="rating-star"></i>
+                                    <span class="fw-bold ms-1">4.6</span>
+                                </span>
+                            </div>
+                            <div class="d-flex align-items-center text-secondary py-1">
+                                <i data-feather="map-pin" width="16" height="16"></i>
+                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                                    Yellowstone, Wyoming
+                                </span>
+                            </div>
+                            <p class="font-merriweather fs-7 text-truncate-2">Charming rustic cabin nestled in the
+                                woods. Perfect for nature enthusiasts and those seeking a peaceful retreat.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <a href="#" class="card product-card border-0">
+                        <div class="product-card-image ratio ratio-1x1 position-relative overflow-hidden rounded-4">
+                            <div class="favorite-btn">
+                                <input type="checkbox" id="favorite-5" class="btn-check">
+                                <label class="btn border-0 p-2" for="favorite-5">
+                                    <i data-feather="heart" width="24" height="24"></i>
+                                </label>
+                            </div>
+                            <img src="https://placehold.co/100x100" alt="Urban Loft"
+                                class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                        </div>
+                        <div class="card-body px-0 py-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span class="fw-bolder">
+                                    <span class="fs-4">$180</span> / Day
+                                </span>
+                                <span class="d-flex align-items-center font-merriweather">
+                                    <i data-feather="star" width="16" height="16" class="rating-star"></i>
+                                    <span class="fw-bold ms-1">4.5</span>
+                                </span>
+                            </div>
+                            <div class="d-flex align-items-center text-secondary py-1">
+                                <i data-feather="map-pin" width="16" height="16"></i>
+                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                                    Chicago, Illinois
+                                </span>
+                            </div>
+                            <p class="font-merriweather fs-7 text-truncate-2">Modern urban loft with industrial chic
+                                design. Ideal for city explorers and business travelers.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <a href="#" class="card product-card border-0">
+                        <div class="product-card-image ratio ratio-1x1 position-relative overflow-hidden rounded-4">
+                            <div class="favorite-btn">
+                                <input type="checkbox" id="favorite-6" class="btn-check">
+                                <label class="btn border-0 p-2" for="favorite-6">
+                                    <i data-feather="heart" width="24" height="24"></i>
+                                </label>
+                            </div>
+                            <img src="https://placehold.co/100x100" alt="Tropical Resort"
+                                class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                        </div>
+                        <div class="card-body px-0 py-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span class="fw-bolder">
+                                    <span class="fs-4">$400</span> / Day
+                                </span>
+                                <span class="d-flex align-items-center font-merriweather">
+                                    <i data-feather="star" width="16" height="16" class="rating-star"></i>
+                                    <span class="fw-bold ms-1">4.9</span>
+                                </span>
+                            </div>
+                            <div class="d-flex align-items-center text-secondary py-1">
+                                <i data-feather="map-pin" width="16" height="16"></i>
+                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                                    Bali, Indonesia
+                                </span>
+                            </div>
+                            <p class="font-merriweather fs-7 text-truncate-2">Luxurious tropical resort with private
+                                pool. Perfect for those seeking ultimate relaxation and exotic experiences.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <a href="#" class="card product-card border-0">
+                        <div class="product-card-image ratio ratio-1x1 position-relative overflow-hidden rounded-4">
+                            <div class="favorite-btn">
+                                <input type="checkbox" id="favorite-7" class="btn-check">
+                                <label class="btn border-0 p-2" for="favorite-7">
+                                    <i data-feather="heart" width="24" height="24"></i>
+                                </label>
+                            </div>
+                            <img src="https://placehold.co/100x100" alt="Historic Townhouse"
+                                class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                        </div>
+                        <div class="card-body px-0 py-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span class="fw-bolder">
+                                    <span class="fs-4">$250</span> / Day
+                                </span>
+                                <span class="d-flex align-items-center font-merriweather">
+                                    <i data-feather="star" width="16" height="16" class="rating-star"></i>
+                                    <span class="fw-bold ms-1">4.7</span>
+                                </span>
+                            </div>
+                            <div class="d-flex align-items-center text-secondary py-1">
+                                <i data-feather="map-pin" width="16" height="16"></i>
+                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                                    Boston, Massachusetts
+                                </span>
+                            </div>
+                            <p class="font-merriweather fs-7 text-truncate-2">Charming historic townhouse in the heart
+                                of Boston. Ideal for history buffs and those seeking a unique urban experience.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <a href="#" class="card product-card border-0">
+                        <div class="product-card-image ratio ratio-1x1 position-relative overflow-hidden rounded-4">
+                            <div class="favorite-btn">
+                                <input type="checkbox" id="favorite-4" class="btn-check">
+                                <label class="btn border-0 p-2" for="favorite-4">
+                                    <i data-feather="heart" width="24" height="24"></i>
+                                </label>
+                            </div>
+                            <img src="https://placehold.co/100x100" alt="Rustic Cabin"
+                                class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                        </div>
+                        <div class="card-body px-0 py-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span class="fw-bolder">
+                                    <span class="fs-4">$150</span> / Day
+                                </span>
+                                <span class="d-flex align-items-center font-merriweather">
+                                    <i data-feather="star" width="16" height="16" class="rating-star"></i>
+                                    <span class="fw-bold ms-1">4.6</span>
+                                </span>
+                            </div>
+                            <div class="d-flex align-items-center text-secondary py-1">
+                                <i data-feather="map-pin" width="16" height="16"></i>
+                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                                    Yellowstone, Wyoming
+                                </span>
+                            </div>
+                            <p class="font-merriweather fs-7 text-truncate-2">Charming rustic cabin nestled in the
+                                woods. Perfect for nature enthusiasts and those seeking a peaceful retreat.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <a href="#" class="card product-card border-0">
+                        <div class="product-card-image ratio ratio-1x1 position-relative overflow-hidden rounded-4">
+                            <div class="favorite-btn">
+                                <input type="checkbox" id="favorite-5" class="btn-check">
+                                <label class="btn border-0 p-2" for="favorite-5">
+                                    <i data-feather="heart" width="24" height="24"></i>
+                                </label>
+                            </div>
+                            <img src="https://placehold.co/100x100" alt="Urban Loft"
+                                class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                        </div>
+                        <div class="card-body px-0 py-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span class="fw-bolder">
+                                    <span class="fs-4">$180</span> / Day
+                                </span>
+                                <span class="d-flex align-items-center font-merriweather">
+                                    <i data-feather="star" width="16" height="16" class="rating-star"></i>
+                                    <span class="fw-bold ms-1">4.5</span>
+                                </span>
+                            </div>
+                            <div class="d-flex align-items-center text-secondary py-1">
+                                <i data-feather="map-pin" width="16" height="16"></i>
+                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                                    Chicago, Illinois
+                                </span>
+                            </div>
+                            <p class="font-merriweather fs-7 text-truncate-2">Modern urban loft with industrial chic
+                                design. Ideal for city explorers and business travelers.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <a href="#" class="card product-card border-0">
+                        <div class="product-card-image ratio ratio-1x1 position-relative overflow-hidden rounded-4">
+                            <div class="favorite-btn">
+                                <input type="checkbox" id="favorite-6" class="btn-check">
+                                <label class="btn border-0 p-2" for="favorite-6">
+                                    <i data-feather="heart" width="24" height="24"></i>
+                                </label>
+                            </div>
+                            <img src="https://placehold.co/100x100" alt="Tropical Resort"
+                                class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                        </div>
+                        <div class="card-body px-0 py-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span class="fw-bolder">
+                                    <span class="fs-4">$400</span> / Day
+                                </span>
+                                <span class="d-flex align-items-center font-merriweather">
+                                    <i data-feather="star" width="16" height="16" class="rating-star"></i>
+                                    <span class="fw-bold ms-1">4.9</span>
+                                </span>
+                            </div>
+                            <div class="d-flex align-items-center text-secondary py-1">
+                                <i data-feather="map-pin" width="16" height="16"></i>
+                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                                    Bali, Indonesia
+                                </span>
+                            </div>
+                            <p class="font-merriweather fs-7 text-truncate-2">Luxurious tropical resort with private
+                                pool. Perfect for those seeking ultimate relaxation and exotic experiences.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <a href="#" class="card product-card border-0">
+                        <div class="product-card-image ratio ratio-1x1 position-relative overflow-hidden rounded-4">
+                            <div class="favorite-btn">
+                                <input type="checkbox" id="favorite-7" class="btn-check">
+                                <label class="btn border-0 p-2" for="favorite-7">
+                                    <i data-feather="heart" width="24" height="24"></i>
+                                </label>
+                            </div>
+                            <img src="https://placehold.co/100x100" alt="Historic Townhouse"
+                                class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                        </div>
+                        <div class="card-body px-0 py-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span class="fw-bolder">
+                                    <span class="fs-4">$250</span> / Day
+                                </span>
+                                <span class="d-flex align-items-center font-merriweather">
+                                    <i data-feather="star" width="16" height="16" class="rating-star"></i>
+                                    <span class="fw-bold ms-1">4.7</span>
+                                </span>
+                            </div>
+                            <div class="d-flex align-items-center text-secondary py-1">
+                                <i data-feather="map-pin" width="16" height="16"></i>
+                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                                    Boston, Massachusetts
+                                </span>
+                            </div>
+                            <p class="font-merriweather fs-7 text-truncate-2">Charming historic townhouse in the heart
+                                of Boston. Ideal for history buffs and those seeking a unique urban experience.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <a href="#" class="card product-card border-0">
+                        <div class="product-card-image ratio ratio-1x1 position-relative overflow-hidden rounded-4">
+                            <div class="favorite-btn">
+                                <input type="checkbox" id="favorite-4" class="btn-check">
+                                <label class="btn border-0 p-2" for="favorite-4">
+                                    <i data-feather="heart" width="24" height="24"></i>
+                                </label>
+                            </div>
+                            <img src="https://placehold.co/100x100" alt="Rustic Cabin"
+                                class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                        </div>
+                        <div class="card-body px-0 py-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span class="fw-bolder">
+                                    <span class="fs-4">$150</span> / Day
+                                </span>
+                                <span class="d-flex align-items-center font-merriweather">
+                                    <i data-feather="star" width="16" height="16" class="rating-star"></i>
+                                    <span class="fw-bold ms-1">4.6</span>
+                                </span>
+                            </div>
+                            <div class="d-flex align-items-center text-secondary py-1">
+                                <i data-feather="map-pin" width="16" height="16"></i>
+                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                                    Yellowstone, Wyoming
+                                </span>
+                            </div>
+                            <p class="font-merriweather fs-7 text-truncate-2">Charming rustic cabin nestled in the
+                                woods. Perfect for nature enthusiasts and those seeking a peaceful retreat.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <a href="#" class="card product-card border-0">
+                        <div class="product-card-image ratio ratio-1x1 position-relative overflow-hidden rounded-4">
+                            <div class="favorite-btn">
+                                <input type="checkbox" id="favorite-5" class="btn-check">
+                                <label class="btn border-0 p-2" for="favorite-5">
+                                    <i data-feather="heart" width="24" height="24"></i>
+                                </label>
+                            </div>
+                            <img src="https://placehold.co/100x100" alt="Urban Loft"
+                                class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                        </div>
+                        <div class="card-body px-0 py-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span class="fw-bolder">
+                                    <span class="fs-4">$180</span> / Day
+                                </span>
+                                <span class="d-flex align-items-center font-merriweather">
+                                    <i data-feather="star" width="16" height="16" class="rating-star"></i>
+                                    <span class="fw-bold ms-1">4.5</span>
+                                </span>
+                            </div>
+                            <div class="d-flex align-items-center text-secondary py-1">
+                                <i data-feather="map-pin" width="16" height="16"></i>
+                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                                    Chicago, Illinois
+                                </span>
+                            </div>
+                            <p class="font-merriweather fs-7 text-truncate-2">Modern urban loft with industrial chic
+                                design. Ideal for city explorers and business travelers.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <a href="#" class="card product-card border-0">
+                        <div class="product-card-image ratio ratio-1x1 position-relative overflow-hidden rounded-4">
+                            <div class="favorite-btn">
+                                <input type="checkbox" id="favorite-6" class="btn-check">
+                                <label class="btn border-0 p-2" for="favorite-6">
+                                    <i data-feather="heart" width="24" height="24"></i>
+                                </label>
+                            </div>
+                            <img src="https://placehold.co/100x100" alt="Tropical Resort"
+                                class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                        </div>
+                        <div class="card-body px-0 py-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span class="fw-bolder">
+                                    <span class="fs-4">$400</span> / Day
+                                </span>
+                                <span class="d-flex align-items-center font-merriweather">
+                                    <i data-feather="star" width="16" height="16" class="rating-star"></i>
+                                    <span class="fw-bold ms-1">4.9</span>
+                                </span>
+                            </div>
+                            <div class="d-flex align-items-center text-secondary py-1">
+                                <i data-feather="map-pin" width="16" height="16"></i>
+                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                                    Bali, Indonesia
+                                </span>
+                            </div>
+                            <p class="font-merriweather fs-7 text-truncate-2">Luxurious tropical resort with private
+                                pool. Perfect for those seeking ultimate relaxation and exotic experiences.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <a href="#" class="card product-card border-0">
+                        <div class="product-card-image ratio ratio-1x1 position-relative overflow-hidden rounded-4">
+                            <div class="favorite-btn">
+                                <input type="checkbox" id="favorite-7" class="btn-check">
+                                <label class="btn border-0 p-2" for="favorite-7">
+                                    <i data-feather="heart" width="24" height="24"></i>
+                                </label>
+                            </div>
+                            <img src="https://placehold.co/100x100" alt="Historic Townhouse"
+                                class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                        </div>
+                        <div class="card-body px-0 py-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span class="fw-bolder">
+                                    <span class="fs-4">$250</span> / Day
+                                </span>
+                                <span class="d-flex align-items-center font-merriweather">
+                                    <i data-feather="star" width="16" height="16" class="rating-star"></i>
+                                    <span class="fw-bold ms-1">4.7</span>
+                                </span>
+                            </div>
+                            <div class="d-flex align-items-center text-secondary py-1">
+                                <i data-feather="map-pin" width="16" height="16"></i>
+                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                                    Boston, Massachusetts
+                                </span>
+                            </div>
+                            <p class="font-merriweather fs-7 text-truncate-2">Charming historic townhouse in the heart
+                                of Boston. Ideal for history buffs and those seeking a unique urban experience.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <a href="#" class="card product-card border-0">
+                        <div class="product-card-image ratio ratio-1x1 position-relative overflow-hidden rounded-4">
+                            <div class="favorite-btn">
+                                <input type="checkbox" id="favorite-4" class="btn-check">
+                                <label class="btn border-0 p-2" for="favorite-4">
+                                    <i data-feather="heart" width="24" height="24"></i>
+                                </label>
+                            </div>
+                            <img src="https://placehold.co/100x100" alt="Rustic Cabin"
+                                class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                        </div>
+                        <div class="card-body px-0 py-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span class="fw-bolder">
+                                    <span class="fs-4">$150</span> / Day
+                                </span>
+                                <span class="d-flex align-items-center font-merriweather">
+                                    <i data-feather="star" width="16" height="16" class="rating-star"></i>
+                                    <span class="fw-bold ms-1">4.6</span>
+                                </span>
+                            </div>
+                            <div class="d-flex align-items-center text-secondary py-1">
+                                <i data-feather="map-pin" width="16" height="16"></i>
+                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                                    Yellowstone, Wyoming
+                                </span>
+                            </div>
+                            <p class="font-merriweather fs-7 text-truncate-2">Charming rustic cabin nestled in the
+                                woods. Perfect for nature enthusiasts and those seeking a peaceful retreat.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <a href="#" class="card product-card border-0">
+                        <div class="product-card-image ratio ratio-1x1 position-relative overflow-hidden rounded-4">
+                            <div class="favorite-btn">
+                                <input type="checkbox" id="favorite-5" class="btn-check">
+                                <label class="btn border-0 p-2" for="favorite-5">
+                                    <i data-feather="heart" width="24" height="24"></i>
+                                </label>
+                            </div>
+                            <img src="https://placehold.co/100x100" alt="Urban Loft"
+                                class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                        </div>
+                        <div class="card-body px-0 py-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span class="fw-bolder">
+                                    <span class="fs-4">$180</span> / Day
+                                </span>
+                                <span class="d-flex align-items-center font-merriweather">
+                                    <i data-feather="star" width="16" height="16" class="rating-star"></i>
+                                    <span class="fw-bold ms-1">4.5</span>
+                                </span>
+                            </div>
+                            <div class="d-flex align-items-center text-secondary py-1">
+                                <i data-feather="map-pin" width="16" height="16"></i>
+                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                                    Chicago, Illinois
+                                </span>
+                            </div>
+                            <p class="font-merriweather fs-7 text-truncate-2">Modern urban loft with industrial chic
+                                design. Ideal for city explorers and business travelers.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <a href="#" class="card product-card border-0">
+                        <div class="product-card-image ratio ratio-1x1 position-relative overflow-hidden rounded-4">
+                            <div class="favorite-btn">
+                                <input type="checkbox" id="favorite-6" class="btn-check">
+                                <label class="btn border-0 p-2" for="favorite-6">
+                                    <i data-feather="heart" width="24" height="24"></i>
+                                </label>
+                            </div>
+                            <img src="https://placehold.co/100x100" alt="Tropical Resort"
+                                class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                        </div>
+                        <div class="card-body px-0 py-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span class="fw-bolder">
+                                    <span class="fs-4">$400</span> / Day
+                                </span>
+                                <span class="d-flex align-items-center font-merriweather">
+                                    <i data-feather="star" width="16" height="16" class="rating-star"></i>
+                                    <span class="fw-bold ms-1">4.9</span>
+                                </span>
+                            </div>
+                            <div class="d-flex align-items-center text-secondary py-1">
+                                <i data-feather="map-pin" width="16" height="16"></i>
+                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                                    Bali, Indonesia
+                                </span>
+                            </div>
+                            <p class="font-merriweather fs-7 text-truncate-2">Luxurious tropical resort with private
+                                pool. Perfect for those seeking ultimate relaxation and exotic experiences.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <a href="#" class="card product-card border-0">
+                        <div class="product-card-image ratio ratio-1x1 position-relative overflow-hidden rounded-4">
+                            <div class="favorite-btn">
+                                <input type="checkbox" id="favorite-7" class="btn-check">
+                                <label class="btn border-0 p-2" for="favorite-7">
+                                    <i data-feather="heart" width="24" height="24"></i>
+                                </label>
+                            </div>
+                            <img src="https://placehold.co/100x100" alt="Historic Townhouse"
+                                class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                        </div>
+                        <div class="card-body px-0 py-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span class="fw-bolder">
+                                    <span class="fs-4">$250</span> / Day
+                                </span>
+                                <span class="d-flex align-items-center font-merriweather">
+                                    <i data-feather="star" width="16" height="16" class="rating-star"></i>
+                                    <span class="fw-bold ms-1">4.7</span>
+                                </span>
+                            </div>
+                            <div class="d-flex align-items-center text-secondary py-1">
+                                <i data-feather="map-pin" width="16" height="16"></i>
+                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                                    Boston, Massachusetts
+                                </span>
+                            </div>
+                            <p class="font-merriweather fs-7 text-truncate-2">Charming historic townhouse in the heart
+                                of Boston. Ideal for history buffs and those seeking a unique urban experience.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <a href="#" class="card product-card border-0">
+                        <div class="product-card-image ratio ratio-1x1 position-relative overflow-hidden rounded-4">
+                            <div class="favorite-btn">
+                                <input type="checkbox" id="favorite-4" class="btn-check">
+                                <label class="btn border-0 p-2" for="favorite-4">
+                                    <i data-feather="heart" width="24" height="24"></i>
+                                </label>
+                            </div>
+                            <img src="https://placehold.co/100x100" alt="Rustic Cabin"
+                                class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                        </div>
+                        <div class="card-body px-0 py-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span class="fw-bolder">
+                                    <span class="fs-4">$150</span> / Day
+                                </span>
+                                <span class="d-flex align-items-center font-merriweather">
+                                    <i data-feather="star" width="16" height="16" class="rating-star"></i>
+                                    <span class="fw-bold ms-1">4.6</span>
+                                </span>
+                            </div>
+                            <div class="d-flex align-items-center text-secondary py-1">
+                                <i data-feather="map-pin" width="16" height="16"></i>
+                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                                    Yellowstone, Wyoming
+                                </span>
+                            </div>
+                            <p class="font-merriweather fs-7 text-truncate-2">Charming rustic cabin nestled in the
+                                woods. Perfect for nature enthusiasts and those seeking a peaceful retreat.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <a href="#" class="card product-card border-0">
+                        <div class="product-card-image ratio ratio-1x1 position-relative overflow-hidden rounded-4">
+                            <div class="favorite-btn">
+                                <input type="checkbox" id="favorite-5" class="btn-check">
+                                <label class="btn border-0 p-2" for="favorite-5">
+                                    <i data-feather="heart" width="24" height="24"></i>
+                                </label>
+                            </div>
+                            <img src="https://placehold.co/100x100" alt="Urban Loft"
+                                class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                        </div>
+                        <div class="card-body px-0 py-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span class="fw-bolder">
+                                    <span class="fs-4">$180</span> / Day
+                                </span>
+                                <span class="d-flex align-items-center font-merriweather">
+                                    <i data-feather="star" width="16" height="16" class="rating-star"></i>
+                                    <span class="fw-bold ms-1">4.5</span>
+                                </span>
+                            </div>
+                            <div class="d-flex align-items-center text-secondary py-1">
+                                <i data-feather="map-pin" width="16" height="16"></i>
+                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                                    Chicago, Illinois
+                                </span>
+                            </div>
+                            <p class="font-merriweather fs-7 text-truncate-2">Modern urban loft with industrial chic
+                                design. Ideal for city explorers and business travelers.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <a href="#" class="card product-card border-0">
+                        <div class="product-card-image ratio ratio-1x1 position-relative overflow-hidden rounded-4">
+                            <div class="favorite-btn">
+                                <input type="checkbox" id="favorite-6" class="btn-check">
+                                <label class="btn border-0 p-2" for="favorite-6">
+                                    <i data-feather="heart" width="24" height="24"></i>
+                                </label>
+                            </div>
+                            <img src="https://placehold.co/100x100" alt="Tropical Resort"
+                                class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                        </div>
+                        <div class="card-body px-0 py-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span class="fw-bolder">
+                                    <span class="fs-4">$400</span> / Day
+                                </span>
+                                <span class="d-flex align-items-center font-merriweather">
+                                    <i data-feather="star" width="16" height="16" class="rating-star"></i>
+                                    <span class="fw-bold ms-1">4.9</span>
+                                </span>
+                            </div>
+                            <div class="d-flex align-items-center text-secondary py-1">
+                                <i data-feather="map-pin" width="16" height="16"></i>
+                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                                    Bali, Indonesia
+                                </span>
+                            </div>
+                            <p class="font-merriweather fs-7 text-truncate-2">Luxurious tropical resort with private
+                                pool. Perfect for those seeking ultimate relaxation and exotic experiences.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <a href="#" class="card product-card border-0">
+                        <div class="product-card-image ratio ratio-1x1 position-relative overflow-hidden rounded-4">
+                            <div class="favorite-btn">
+                                <input type="checkbox" id="favorite-7" class="btn-check">
+                                <label class="btn border-0 p-2" for="favorite-7">
+                                    <i data-feather="heart" width="24" height="24"></i>
+                                </label>
+                            </div>
+                            <img src="https://placehold.co/100x100" alt="Historic Townhouse"
+                                class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                        </div>
+                        <div class="card-body px-0 py-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span class="fw-bolder">
+                                    <span class="fs-4">$250</span> / Day
+                                </span>
+                                <span class="d-flex align-items-center font-merriweather">
+                                    <i data-feather="star" width="16" height="16" class="rating-star"></i>
+                                    <span class="fw-bold ms-1">4.7</span>
+                                </span>
+                            </div>
+                            <div class="d-flex align-items-center text-secondary py-1">
+                                <i data-feather="map-pin" width="16" height="16"></i>
+                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                                    Boston, Massachusetts
+                                </span>
+                            </div>
+                            <p class="font-merriweather fs-7 text-truncate-2">Charming historic townhouse in the heart
+                                of Boston. Ideal for history buffs and those seeking a unique urban experience.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <a href="#" class="card product-card border-0">
+                        <div class="product-card-image ratio ratio-1x1 position-relative overflow-hidden rounded-4">
+                            <div class="favorite-btn">
+                                <input type="checkbox" id="favorite-4" class="btn-check">
+                                <label class="btn border-0 p-2" for="favorite-4">
+                                    <i data-feather="heart" width="24" height="24"></i>
+                                </label>
+                            </div>
+                            <img src="https://placehold.co/100x100" alt="Rustic Cabin"
+                                class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                        </div>
+                        <div class="card-body px-0 py-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span class="fw-bolder">
+                                    <span class="fs-4">$150</span> / Day
+                                </span>
+                                <span class="d-flex align-items-center font-merriweather">
+                                    <i data-feather="star" width="16" height="16" class="rating-star"></i>
+                                    <span class="fw-bold ms-1">4.6</span>
+                                </span>
+                            </div>
+                            <div class="d-flex align-items-center text-secondary py-1">
+                                <i data-feather="map-pin" width="16" height="16"></i>
+                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                                    Yellowstone, Wyoming
+                                </span>
+                            </div>
+                            <p class="font-merriweather fs-7 text-truncate-2">Charming rustic cabin nestled in the
+                                woods. Perfect for nature enthusiasts and those seeking a peaceful retreat.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <a href="#" class="card product-card border-0">
+                        <div class="product-card-image ratio ratio-1x1 position-relative overflow-hidden rounded-4">
+                            <div class="favorite-btn">
+                                <input type="checkbox" id="favorite-5" class="btn-check">
+                                <label class="btn border-0 p-2" for="favorite-5">
+                                    <i data-feather="heart" width="24" height="24"></i>
+                                </label>
+                            </div>
+                            <img src="https://placehold.co/100x100" alt="Urban Loft"
+                                class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                        </div>
+                        <div class="card-body px-0 py-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span class="fw-bolder">
+                                    <span class="fs-4">$180</span> / Day
+                                </span>
+                                <span class="d-flex align-items-center font-merriweather">
+                                    <i data-feather="star" width="16" height="16" class="rating-star"></i>
+                                    <span class="fw-bold ms-1">4.5</span>
+                                </span>
+                            </div>
+                            <div class="d-flex align-items-center text-secondary py-1">
+                                <i data-feather="map-pin" width="16" height="16"></i>
+                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                                    Chicago, Illinois
+                                </span>
+                            </div>
+                            <p class="font-merriweather fs-7 text-truncate-2">Modern urban loft with industrial chic
+                                design. Ideal for city explorers and business travelers.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <a href="#" class="card product-card border-0">
+                        <div class="product-card-image ratio ratio-1x1 position-relative overflow-hidden rounded-4">
+                            <div class="favorite-btn">
+                                <input type="checkbox" id="favorite-6" class="btn-check">
+                                <label class="btn border-0 p-2" for="favorite-6">
+                                    <i data-feather="heart" width="24" height="24"></i>
+                                </label>
+                            </div>
+                            <img src="https://placehold.co/100x100" alt="Tropical Resort"
+                                class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                        </div>
+                        <div class="card-body px-0 py-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span class="fw-bolder">
+                                    <span class="fs-4">$400</span> / Day
+                                </span>
+                                <span class="d-flex align-items-center font-merriweather">
+                                    <i data-feather="star" width="16" height="16" class="rating-star"></i>
+                                    <span class="fw-bold ms-1">4.9</span>
+                                </span>
+                            </div>
+                            <div class="d-flex align-items-center text-secondary py-1">
+                                <i data-feather="map-pin" width="16" height="16"></i>
+                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                                    Bali, Indonesia
+                                </span>
+                            </div>
+                            <p class="font-merriweather fs-7 text-truncate-2">Luxurious tropical resort with private
+                                pool. Perfect for those seeking ultimate relaxation and exotic experiences.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <a href="#" class="card product-card border-0">
+                        <div class="product-card-image ratio ratio-1x1 position-relative overflow-hidden rounded-4">
+                            <div class="favorite-btn">
+                                <input type="checkbox" id="favorite-7" class="btn-check">
+                                <label class="btn border-0 p-2" for="favorite-7">
+                                    <i data-feather="heart" width="24" height="24"></i>
+                                </label>
+                            </div>
+                            <img src="https://placehold.co/100x100" alt="Historic Townhouse"
+                                class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                        </div>
+                        <div class="card-body px-0 py-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span class="fw-bolder">
+                                    <span class="fs-4">$250</span> / Day
+                                </span>
+                                <span class="d-flex align-items-center font-merriweather">
+                                    <i data-feather="star" width="16" height="16" class="rating-star"></i>
+                                    <span class="fw-bold ms-1">4.7</span>
+                                </span>
+                            </div>
+                            <div class="d-flex align-items-center text-secondary py-1">
+                                <i data-feather="map-pin" width="16" height="16"></i>
+                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                                    Boston, Massachusetts
+                                </span>
+                            </div>
+                            <p class="font-merriweather fs-7 text-truncate-2">Charming historic townhouse in the heart
+                                of Boston. Ideal for history buffs and those seeking a unique urban experience.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <a href="#" class="card product-card border-0">
+                        <div class="product-card-image ratio ratio-1x1 position-relative overflow-hidden rounded-4">
+                            <div class="favorite-btn">
+                                <input type="checkbox" id="favorite-4" class="btn-check">
+                                <label class="btn border-0 p-2" for="favorite-4">
+                                    <i data-feather="heart" width="24" height="24"></i>
+                                </label>
+                            </div>
+                            <img src="https://placehold.co/100x100" alt="Rustic Cabin"
+                                class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                        </div>
+                        <div class="card-body px-0 py-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span class="fw-bolder">
+                                    <span class="fs-4">$150</span> / Day
+                                </span>
+                                <span class="d-flex align-items-center font-merriweather">
+                                    <i data-feather="star" width="16" height="16" class="rating-star"></i>
+                                    <span class="fw-bold ms-1">4.6</span>
+                                </span>
+                            </div>
+                            <div class="d-flex align-items-center text-secondary py-1">
+                                <i data-feather="map-pin" width="16" height="16"></i>
+                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                                    Yellowstone, Wyoming
+                                </span>
+                            </div>
+                            <p class="font-merriweather fs-7 text-truncate-2">Charming rustic cabin nestled in the
+                                woods. Perfect for nature enthusiasts and those seeking a peaceful retreat.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <a href="#" class="card product-card border-0">
+                        <div class="product-card-image ratio ratio-1x1 position-relative overflow-hidden rounded-4">
+                            <div class="favorite-btn">
+                                <input type="checkbox" id="favorite-5" class="btn-check">
+                                <label class="btn border-0 p-2" for="favorite-5">
+                                    <i data-feather="heart" width="24" height="24"></i>
+                                </label>
+                            </div>
+                            <img src="https://placehold.co/100x100" alt="Urban Loft"
+                                class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                        </div>
+                        <div class="card-body px-0 py-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span class="fw-bolder">
+                                    <span class="fs-4">$180</span> / Day
+                                </span>
+                                <span class="d-flex align-items-center font-merriweather">
+                                    <i data-feather="star" width="16" height="16" class="rating-star"></i>
+                                    <span class="fw-bold ms-1">4.5</span>
+                                </span>
+                            </div>
+                            <div class="d-flex align-items-center text-secondary py-1">
+                                <i data-feather="map-pin" width="16" height="16"></i>
+                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                                    Chicago, Illinois
+                                </span>
+                            </div>
+                            <p class="font-merriweather fs-7 text-truncate-2">Modern urban loft with industrial chic
+                                design. Ideal for city explorers and business travelers.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <a href="#" class="card product-card border-0">
+                        <div class="product-card-image ratio ratio-1x1 position-relative overflow-hidden rounded-4">
+                            <div class="favorite-btn">
+                                <input type="checkbox" id="favorite-6" class="btn-check">
+                                <label class="btn border-0 p-2" for="favorite-6">
+                                    <i data-feather="heart" width="24" height="24"></i>
+                                </label>
+                            </div>
+                            <img src="https://placehold.co/100x100" alt="Tropical Resort"
+                                class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                        </div>
+                        <div class="card-body px-0 py-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span class="fw-bolder">
+                                    <span class="fs-4">$400</span> / Day
+                                </span>
+                                <span class="d-flex align-items-center font-merriweather">
+                                    <i data-feather="star" width="16" height="16" class="rating-star"></i>
+                                    <span class="fw-bold ms-1">4.9</span>
+                                </span>
+                            </div>
+                            <div class="d-flex align-items-center text-secondary py-1">
+                                <i data-feather="map-pin" width="16" height="16"></i>
+                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                                    Bali, Indonesia
+                                </span>
+                            </div>
+                            <p class="font-merriweather fs-7 text-truncate-2">Luxurious tropical resort with private
+                                pool. Perfect for those seeking ultimate relaxation and exotic experiences.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+    </main>
 </body>
+
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/js/jquery-3.7.1.min.js"></script>
+<script src="./assets/js/swiper-bundle.min.js"></script>
+<script src="./assets/js/feather.min.js"></script>
+<script src="./assets/js/main.js"></script>
 
 </html>

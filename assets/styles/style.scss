@@ -1,8 +1,49 @@
-/* Improve font rendering */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
 body {
+  font-family: "Nunito Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+}
+
+/* Customizing scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+
+.font-merriweather {
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-weight: normal;
 }
 
 /* Reset anchor styles */
@@ -14,4 +55,86 @@ a {
 /* Remove default focus outline for mouse users */
 :focus:not(:focus-visible) {
   outline: none;
+}
+
+.fs-7 {
+  font-size: 14px;
+}
+
+.fs-8 {
+  font-size: 12px;
+}
+
+.fs-9 {
+  font-size: 10px;
+}
+
+@mixin text-truncate-clamp($lines: 1) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-truncate-2 {
+  @include text-truncate-clamp(2);
+}
+
+header {
+  z-index: 10;
+}
+
+.product-card {
+  .rating-star {
+    fill: #ffc107;
+    stroke: #ffc107;
+  }
+
+  .product-card-image {
+    overflow: hidden;
+    img {
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  .favorite-btn {
+    position: absolute;
+    top: 5px;
+    z-index: 1;
+    height: unset;
+    width: unset;
+    right: 5px;
+    left: unset;
+    .btn-check + .btn {
+      svg {
+        opacity: 0;
+      }
+    }
+    .btn-check:checked + .btn {
+      svg {
+        opacity: 1;
+        fill: #ff4d4d;
+        stroke: #ff4d4d;
+      }
+    }
+  }
+
+  &:hover {
+    .product-card-image {
+      img {
+        transform: rotate(5deg) scale(1.1);
+        filter: brightness(1.1);
+      }
+    }
+
+    .favorite-btn {
+      .btn-check + .btn {
+        svg {
+          opacity: 1;
+          transition: opacity 0.3s ease-in-out;
+        }
+      }
+    }
+  }
 }
