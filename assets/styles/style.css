@@ -71,6 +71,14 @@ input:focus {
   font-size: 10px;
 }
 
+.stroke-2 {
+  stroke-width: 2px;
+}
+
+.stroke-3 {
+  stroke-width: 3px;
+}
+
 .text-truncate-1 {
   display: -webkit-box;
   -webkit-line-clamp: 1;
@@ -130,6 +138,10 @@ header .location-dropdown .list-group li {
 header .location-dropdown .list-group li:hover {
   color: #005bf1;
   cursor: pointer;
+}
+
+main {
+  min-height: 100svh;
 }
 
 .product-card .rating-star {
@@ -274,5 +286,38 @@ header .location-dropdown .list-group li:hover {
 
 .category-slider .dropdown-menu .dropdown-item:hover {
   color: #005bf1;
+}
+
+footer {
+  background-color: #f8f9fa;
+}
+
+footer .list-unstyled a {
+  font-size: 14px;
+}
+
+footer .list-unstyled a:hover {
+  color: #005bf1;
+}
+
+.chosen-container {
+  font-size: 16px;
+  width: auto !important;
+}
+
+.chosen-container .chosen-single {
+  border-color: #dee2e6;
+  background: #fff !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  height: 36px;
+  line-height: 33px;
+}
+
+.chosen-container .chosen-single div b {
+  background-image: url("../images/icons/chevron-down.svg") !important;
+  background-repeat: no-repeat;
+  background-position: -4px 9px !important;
+  background-size: 16px !important;
 }
 /*# sourceMappingURL=style.css.map */

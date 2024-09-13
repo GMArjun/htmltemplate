@@ -30,8 +30,9 @@
                             </span>
                         </span>
                     </button>
-                    <div class="dropdown-menu p-3">
-                        <input type="text" class="form-control" placeholder="Search Location">
+                    <div class="dropdown-menu p-3 py-2">
+                        <input type="text" class="form-control border-0 border-bottom rounded-0"
+                            placeholder="Search Location">
                         <ul class="list-group border-0 mt-2">
                             <li class="list-group-item px-0 fs-7">Chennai, Tamil Nadu, India - 600001</li>
                             <li class="list-group-item px-0 fs-7">Mumbai, Maharashtra, India - 400001</li>
@@ -57,8 +58,12 @@
 
 
                 <div class="d-flex gap-3 align-items-center flex-shrink-0">
-                    <a href="#" type="button" class="btn text-muted">Login / Signup</a>
-                    <a href="#" type="button" class="btn btn-primary rounded-5 px-3">Sell</a>
+                    <a href="#" type="button" class="btn text-muted fw-medium text-black">Login / Signup</a>
+                    <a href="#" type="button"
+                        class="btn btn-primary rounded-5 fw-medium px-3 d-flex align-items-center gap-1 ps-2">
+                        <i data-feather="plus" width="16" height="16" class="stroke-2"></i>
+                        Sell
+                    </a>
                 </div>
             </nav>
         </div>
@@ -76,7 +81,7 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="dropdown">
-                            <div class="category-item" data-bs-offset="0,16" data-bs-toggle="dropdown"
+                            <div class="category-item" data-bs-offset="0,14" data-bs-toggle="dropdown"
                                 aria-expanded="false" id="categoryDropdown">
                                 All Categories
                             </div>
@@ -209,7 +214,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row g-4 mt-4">
+            <div class="row g-4 mt-4 pb-5 mb-5">
                 <h3 class="fw-bold">Products</h3>
                 <div class="col-6 col-md-4 col-lg-3 col-xl-2">
                     <a href="./detailed.html" class="card product-card border-0">
@@ -1207,12 +1212,144 @@
     </main>
 
     <footer class="border-top py-4">
-        <div class="container-xl px-4">
-            <select data-placeholder="Language" id="language-select">
-                <option value=""></option>
-                <option value="English" selected>English</option>
-                <option value="Arabic">Arabic</option>
-            </select>
+        <div class="container-xl px-4 px-xl-0">
+            <a class="navbar-brand fw-bolder fs-1 pe-3" href="#">
+                LOGO
+            </a>
+            <p class="text-muted col-lg-8 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio tempora
+                magni
+                facilis sint at ratione perferendis neque laborum commodi dolor, praesentium illo similique itaque.
+                Amet
+                fugiat sed a veniam enim.</p>
+            <div class="row g-4">
+                <div class="col-6 col-lg-3">
+                    <h6 class="fw-bolder mb-2 fs-5">Categories</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="#">
+                                Electronics
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">
+                                Fashion
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">
+                                Home & Garden
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">
+                                Sports & Outdoors
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">
+                                Toys & Games
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Books & Media
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h6 class="fw-bolder mb-2 fs-5">Customer Service</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="#">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">
+                                Returns & Refunds
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">
+                                Shipping Information
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">
+                                FAQ
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">
+                                Order Tracking
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Privacy Policy
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h6 class="fw-bolder mb-2 fs-5">About Us</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="#">
+                                Our Story
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">
+                                Careers
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">
+                                Press & Media
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">
+                                Partnerships
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">
+                                Sustainability
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Blog
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h6 class="fw-bolder mb-2 fs-5">Language</h6>
+                    <select data-placeholder="Language" id="language-select">
+                        <option value=""></option>
+                        <option value="English" selected>English</option>
+                        <option value="Arabic">Arabic</option>
+                    </select>
+                    <h6 class="fw-bolder mb-2 fs-5 mt-4">Download App</h6>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#">
+                            <img src="https://rentysa.appysa.in/public/front_assets/img/icons/appstore.png" height="40"
+                                alt="">
+                        </a>
+                        <a href="#">
+                            <img src="https://rentysa.appysa.in/public/front_assets/img/icons/playstore.png" height="40"
+                                alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top mt-4 pt-4">
+                Copyright © 2023 Appysa. All rights reserved.
+            </div>
         </div>
     </footer>
 </body>
