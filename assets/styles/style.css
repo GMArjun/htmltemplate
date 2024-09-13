@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 body {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -30,10 +30,6 @@ body {
   scrollbar-color: #888 #f1f1f1;
 }
 
-.font-merriweather {
-  font-family: "Merriweather Sans", sans-serif;
-}
-
 h1,
 h2,
 h3,
@@ -49,6 +45,13 @@ p {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+input:focus {
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border-color: #dee2e6 !important;
 }
 
 /* Remove default focus outline for mouse users */
@@ -68,6 +71,14 @@ a {
   font-size: 10px;
 }
 
+.text-truncate-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .text-truncate-2 {
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -78,6 +89,47 @@ a {
 
 header {
   z-index: 10;
+}
+
+header .dropdown-toggle::after {
+  display: none;
+}
+
+header .input-group {
+  max-width: 300px;
+}
+
+header .input-group .input-group-text {
+  background-color: transparent;
+  border-radius: 2rem;
+  border: none;
+}
+
+header .input-group input {
+  border-radius: 0px 2rem 2rem 0px;
+  border: none;
+}
+
+header .location-dropdown .dropdown-toggle {
+  max-width: 300px;
+}
+
+header .location-dropdown .dropdown-menu {
+  max-width: 300px;
+}
+
+header .location-dropdown .list-group {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+header .location-dropdown .list-group li {
+  border: 0;
+}
+
+header .location-dropdown .list-group li:hover {
+  color: #005BF1;
+  cursor: pointer;
 }
 
 .product-card .rating-star {
@@ -125,5 +177,100 @@ header {
   opacity: 1;
   -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
+}
+
+.category-slider {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 87px;
+  z-index: 2;
+  background-color: #fff;
+}
+
+.category-slider > .container-xl::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 2;
+}
+
+.category-slider > .container-xl::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 2;
+}
+
+.category-slider .swiper {
+  overflow: visible;
+}
+
+.category-slider .swiper-button-prev-category-nav {
+  position: absolute;
+  left: 0px;
+  top: 6px;
+  z-index: 10;
+  background-color: #fff !important;
+}
+
+.category-slider .swiper-button-next-category-nav {
+  position: absolute;
+  right: 0px;
+  top: 6px;
+  z-index: 10;
+  background-color: #fff !important;
+}
+
+.category-slider .swiper-button-disabled {
+  opacity: 0.4;
+}
+
+.category-slider .category-nav-swiper .swiper-slide {
+  width: auto;
+}
+
+.category-slider .category-nav-swiper .swiper-button-next-category-nav {
+  right: 0;
+}
+
+.category-slider .category-nav-swiper .category-item {
+  font-family: "Libre Franklin", sans-serif;
+  cursor: pointer;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  padding: 10px 0px;
+}
+
+.category-slider .category-nav-swiper .category-item.show {
+  color: var(--color-primary);
+  border-bottom: 4px solid var(--color-primary);
+}
+
+.category-slider .dropdown-menu {
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.06);
+  z-index: 1000;
+  border-radius: 8px;
+  min-width: 800px;
+  padding: 24px;
+  border: none;
+}
+
+.category-slider .dropdown-menu .dropdown-item {
+  padding: 0px;
+  color: var(--color-text-muted);
+  background-color: transparent;
+}
+
+.category-slider .dropdown-menu .dropdown-item:hover {
+  color: var(--color-primary);
 }
 /*# sourceMappingURL=style.css.map */

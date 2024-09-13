@@ -7,25 +7,210 @@
     <title>Classified Home Page</title>
     <link rel="stylesheet" href="./assets/styles/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/styles/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/styles/chosen.min.css">
     <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
 
 <body>
     <!-- Header -->
-    <header class="position-sticky top-0 bg-white">
+    <header class="position-sticky top-0 bg-white border-bottom">
         <div class="container-xl px-4 px-xl-0">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand fw-bolder fs-1" href="#">
+            <nav class="navbar navbar-expand-md navbar-light gap-3">
+                <a class="navbar-brand fw-bolder fs-1 pe-3" href="#">
                     LOGO
                 </a>
+
+                <div class="dropdown location-dropdown">
+                    <button type="button" class="btn outline-0 border-0 dropdown-toggle" data-bs-offset="0,29"
+                        data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                        <span class="d-flex align-items-center gap-2">
+                            <i data-feather="map-pin" width="16" height="16" class="flex-shrink-0"></i>
+                            <span class="text-truncate">
+                                Madurai, Tamil Nadu, India - 625007
+                            </span>
+                        </span>
+                    </button>
+                    <div class="dropdown-menu p-3">
+                        <input type="text" class="form-control" placeholder="Search Location">
+                        <ul class="list-group border-0 mt-2">
+                            <li class="list-group-item px-0 fs-7">Chennai, Tamil Nadu, India - 600001</li>
+                            <li class="list-group-item px-0 fs-7">Mumbai, Maharashtra, India - 400001</li>
+                            <li class="list-group-item px-0 fs-7">Delhi, Delhi, India - 110001</li>
+                            <li class="list-group-item px-0 fs-7">Bangalore, Karnataka, India - 560001</li>
+                            <li class="list-group-item px-0 fs-7">Kolkata, West Bengal, India - 700001</li>
+                            <li class="list-group-item px-0 fs-7">Hyderabad, Telangana, India - 500001</li>
+                            <li class="list-group-item px-0 fs-7">Chennai, Tamil Nadu, India - 600001</li>
+                            <li class="list-group-item px-0 fs-7">Mumbai, Maharashtra, India - 400001</li>
+                            <li class="list-group-item px-0 fs-7">Delhi, Delhi, India - 110001</li>
+                            <li class="list-group-item px-0 fs-7">Bangalore, Karnataka, India - 560001</li>
+                            <li class="list-group-item px-0 fs-7">Kolkata, West Bengal, India - 700001</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="input-group ms-auto border-bottom">
+                    <span class="input-group-text ps-1 pe-0">
+                        <i data-feather="search" width="16" height="16"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+
+
+                <div class="d-flex gap-3 align-items-center flex-shrink-0">
+                    <a href="#" type="button" class="btn text-muted">Login / Signup</a>
+                    <a href="#" type="button" class="btn btn-primary rounded-5 px-3">Sell</a>
+                </div>
             </nav>
         </div>
     </header>
 
+    <div class="category-slider d-none d-md-flex border-bottom">
+        <div class="container-xl px-5  position-relative">
+            <button class="btn border-0 swiper-button-prev-category-nav">
+                <i data-feather="chevron-left" width="20" height="20"></i>
+            </button>
+            <button class="btn border-0 swiper-button-next-category-nav">
+                <i data-feather="chevron-right" width="20" height="20"></i>
+            </button>
+            <div class="swiper category-nav-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="dropdown">
+                            <div class="category-item" data-bs-offset="0,16" data-bs-toggle="dropdown"
+                                aria-expanded="false" id="categoryDropdown">
+                                All Categories
+                            </div>
+                            <ul class="dropdown-menu font-libre-franklin" id="categoryMenu">
+                                <div class="row">
+                                    <div class="col-4 d-flex flex-column gap-4">
+                                        <div class="d-flex flex-column gap-3">
+                                            <p class="mb-0 fw-bold">Art & Illustration</p>
+                                            <a class="dropdown-item" href="#">Illustration</a>
+                                            <a class="dropdown-item" href="#">AI Artists</a>
+                                            <a class="dropdown-item" href="#">Children's Book Illustration</a>
+                                            <a class="dropdown-item" href="#">Illustration</a>
+                                            <a class="dropdown-item" href="#">AI Artists</a>
+                                            <a class="dropdown-item" href="#">Children's Book Illustration</a>
+                                        </div>
+                                        <div class="d-flex flex-column gap-3">
+                                            <p class="mb-0 fw-bold">Logo & Brand Identity</p>
+                                            <a class="dropdown-item" href="#">Illustration</a>
+                                            <a class="dropdown-item" href="#">AI Artists</a>
+                                            <a class="dropdown-item" href="#">Children's Book Illustration</a>
+                                            <a class="dropdown-item" href="#">Illustration</a>
+                                            <a class="dropdown-item" href="#">AI Artists</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 d-flex flex-column gap-4">
+                                        <div class="d-flex flex-column gap-3">
+                                            <p class="mb-0 fw-bold">Art & Illustration</p>
+                                            <a class="dropdown-item" href="#">Illustration</a>
+                                            <a class="dropdown-item" href="#">AI Artists</a>
+                                            <a class="dropdown-item" href="#">Children's Book Illustration</a>
+                                            <a class="dropdown-item" href="#">Illustration</a>
+                                            <a class="dropdown-item" href="#">AI Artists</a>
+                                            <a class="dropdown-item" href="#">Children's Book Illustration</a>
+                                            <a class="dropdown-item" href="#">Illustration</a>
+                                            <a class="dropdown-item" href="#">AI Artists</a>
+                                        </div>
+                                        <div class="d-flex flex-column gap-3">
+                                            <p class="mb-0 fw-bold">Logo & Brand Identity</p>
+                                            <a class="dropdown-item" href="#">Illustration</a>
+                                            <a class="dropdown-item" href="#">AI Artists</a>
+                                            <a class="dropdown-item" href="#">Children's Book Illustration</a>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-4 d-flex flex-column gap-4">
+                                        <div class="d-flex flex-column gap-3">
+                                            <p class="mb-0 fw-bold">Art & Illustration</p>
+                                            <a class="dropdown-item" href="#">Illustration</a>
+                                            <a class="dropdown-item" href="#">AI Artists</a>
+                                            <a class="dropdown-item" href="#">Children's Book Illustration</a>
+                                        </div>
+                                        <div class="d-flex flex-column gap-3">
+                                            <p class="mb-0 fw-bold">Logo & Brand Identity</p>
+                                            <a class="dropdown-item" href="#">Illustration</a>
+                                            <a class="dropdown-item" href="#">AI Artists</a>
+                                            <a class="dropdown-item" href="#">Children's Book Illustration</a>
+                                            <a class="dropdown-item" href="#">Illustration</a>
+                                            <a class="dropdown-item" href="#">AI Artists</a>
+                                            <a class="dropdown-item" href="#">Illustration</a>
+                                            <a class="dropdown-item" href="#">AI Artists</a>
+                                            <a class="dropdown-item" href="#">Children's Book Illustration</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="category-item">Video & Animation</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="category-item">Allow</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="category-item">Programming & Tech</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="category-item">Business</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="category-item">Lifestyle</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="category-item">Video & Animation</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="category-item">Music & Audio</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="category-item">Programming & Tech</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="category-item">Business</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="category-item">Lifestyle</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <main>
         <div class="container-xl px-4 px-xl-0">
-            <div class="row g-4 mt-0">
-                <h3 class="fw-bold font-merriweather">Products</h3>
+            <div class="swiper banner-swiper mt-4">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/7/25/9be788ff-39a4-4214-99d0-fc97505aae5a1658752545685-USPA_Desk_Banner.jpg"
+                                alt="Banner 1" class="w-100 rounded-4 d-md-block d-none">
+                            <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_auto:eco,w_600,c_limit,fl_progressive/assets/images/2024/9/12/7f6e34a0-1616-444a-9ad1-b059b4470fdd1726140973653-_18965747722F5eeeb9bf_eed8_4c04_a82e_eadb4267931e-2Fimage_png1650595240.png"
+                                class="w-100 rounded-4 d-md-none d-block" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/6/27/53b4daed-cd2c-4111-86c5-14f737eceb351656325318973-Handbags_Desk.jpg"
+                                alt="Banner 2" class="w-100 rounded-4 d-md-block d-none">
+                            <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_auto:eco,w_600,c_limit,fl_progressive/assets/images/2024/9/12/bc3992fb-97c5-420e-b534-4241ab1208b71726163359149-7nu.png"
+                                class="w-100 rounded-4 d-md-none d-block" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/5/31/4031994d-9092-4aa7-aea1-f52f2ae5194f1654006594976-Activewear_DK.jpg"
+                                alt="Banner 3" class="w-100 rounded-4 d-md-block d-none">
+                            <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_auto:eco,w_600,c_limit,fl_progressive/assets/images/2024/9/12/82909a89-af97-4dbe-8f86-7d3918bf2b121726163359204-4nu.png"
+                                class="w-100 rounded-4 d-md-none d-block" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 mt-4">
+                <h3 class="fw-bold">Products</h3>
                 <div class="col-6 col-md-4 col-lg-3 col-xl-2">
                     <a href="./detailed.html" class="card product-card border-0">
                         <div class="product-card-image ratio ratio-1x1 position-relative overflow-hidden rounded-4">
@@ -40,21 +225,21 @@
                         </div>
                         <div class="card-body px-0 py-2">
                             <div class="d-flex align-items-center justify-content-between">
-                                <span class="fw-bolder">
+                                <span class="fw-bolder fs-7">
                                     <span class="fs-4">$1500</span> / Day
                                 </span>
-                                <span class="d-flex align-items-center font-merriweather">
+                                <span class="d-flex align-items-center ">
                                     <i data-feather="star" width="16" height="16" class="rating-star"></i>
                                     <span class="fw-bold ms-1">4.8</span>
                                 </span>
                             </div>
-                            <div class="d-flex align-items-center text-secondary py-1">
-                                <i data-feather="map-pin" width="16" height="16"></i>
-                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                            <div class="d-flex align-items-center text-muted py-1">
+                                <i data-feather="map-pin" class="map-pin" width="16" height="16"></i>
+                                <span class="ms-1 fs-7 text-truncate">
                                     Manhattan, New York
                                 </span>
                             </div>
-                            <p class="font-merriweather fs-7 text-truncate-2">Luxurious apartment with stunning city
+                            <p class="fs-7 text-truncate-2">Luxurious apartment with stunning city
                                 views. Perfect for a romantic getaway or business trip in the heart of New York City.
                             </p>
                         </div>
@@ -74,21 +259,21 @@
                         </div>
                         <div class="card-body px-0 py-2">
                             <div class="d-flex align-items-center justify-content-between">
-                                <span class="fw-bolder">
+                                <span class="fw-bolder fs-7">
                                     <span class="fs-4">$200</span> / Day
                                 </span>
-                                <span class="d-flex align-items-center font-merriweather">
+                                <span class="d-flex align-items-center ">
                                     <i data-feather="star" width="16" height="16" class="rating-star"></i>
                                     <span class="fw-bold ms-1">4.7</span>
                                 </span>
                             </div>
-                            <div class="d-flex align-items-center text-secondary py-1">
-                                <i data-feather="map-pin" width="16" height="16"></i>
-                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                            <div class="d-flex align-items-center text-muted py-1">
+                                <i data-feather="map-pin" class="map-pin" width="16" height="16"></i>
+                                <span class="ms-1 fs-7 text-truncate">
                                     Aspen, Colorado
                                 </span>
                             </div>
-                            <p class="font-merriweather fs-7 text-truncate-2">Cozy mountain chalet with panoramic views
+                            <p class="fs-7 text-truncate-2">Cozy mountain chalet with panoramic views
                                 of the Rockies. Perfect for ski enthusiasts and nature lovers seeking a peaceful
                                 retreat.</p>
                         </div>
@@ -108,21 +293,21 @@
                         </div>
                         <div class="card-body px-0 py-2">
                             <div class="d-flex align-items-center justify-content-between">
-                                <span class="fw-bolder">
+                                <span class="fw-bolder fs-7">
                                     <span class="fs-4">$300</span> / Day
                                 </span>
-                                <span class="d-flex align-items-center font-merriweather">
+                                <span class="d-flex align-items-center ">
                                     <i data-feather="star" width="16" height="16" class="rating-star"></i>
                                     <span class="fw-bold ms-1">4.9</span>
                                 </span>
                             </div>
-                            <div class="d-flex align-items-center text-secondary py-1">
-                                <i data-feather="map-pin" width="16" height="16"></i>
-                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                            <div class="d-flex align-items-center text-muted py-1">
+                                <i data-feather="map-pin" class="map-pin" width="16" height="16"></i>
+                                <span class="ms-1 fs-7 text-truncate">
                                     Malibu, California
                                 </span>
                             </div>
-                            <p class="font-merriweather fs-7 text-truncate-2">Breathtaking beachfront villa with private
+                            <p class="fs-7 text-truncate-2">Breathtaking beachfront villa with private
                                 access to the ocean. Ideal for family vacations or intimate beach weddings.</p>
                         </div>
                     </a>
@@ -141,21 +326,21 @@
                         </div>
                         <div class="card-body px-0 py-2">
                             <div class="d-flex align-items-center justify-content-between">
-                                <span class="fw-bolder">
+                                <span class="fw-bolder fs-7">
                                     <span class="fs-4">$150</span> / Day
                                 </span>
-                                <span class="d-flex align-items-center font-merriweather">
+                                <span class="d-flex align-items-center ">
                                     <i data-feather="star" width="16" height="16" class="rating-star"></i>
                                     <span class="fw-bold ms-1">4.6</span>
                                 </span>
                             </div>
-                            <div class="d-flex align-items-center text-secondary py-1">
-                                <i data-feather="map-pin" width="16" height="16"></i>
-                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                            <div class="d-flex align-items-center text-muted py-1">
+                                <i data-feather="map-pin" class="map-pin" width="16" height="16"></i>
+                                <span class="ms-1 fs-7 text-truncate">
                                     Yellowstone, Wyoming
                                 </span>
                             </div>
-                            <p class="font-merriweather fs-7 text-truncate-2">Charming rustic cabin nestled in the
+                            <p class="fs-7 text-truncate-2">Charming rustic cabin nestled in the
                                 woods. Perfect for nature enthusiasts and those seeking a peaceful retreat.</p>
                         </div>
                     </a>
@@ -174,21 +359,21 @@
                         </div>
                         <div class="card-body px-0 py-2">
                             <div class="d-flex align-items-center justify-content-between">
-                                <span class="fw-bolder">
+                                <span class="fw-bolder fs-7">
                                     <span class="fs-4">$180</span> / Day
                                 </span>
-                                <span class="d-flex align-items-center font-merriweather">
+                                <span class="d-flex align-items-center ">
                                     <i data-feather="star" width="16" height="16" class="rating-star"></i>
                                     <span class="fw-bold ms-1">4.5</span>
                                 </span>
                             </div>
-                            <div class="d-flex align-items-center text-secondary py-1">
-                                <i data-feather="map-pin" width="16" height="16"></i>
-                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                            <div class="d-flex align-items-center text-muted py-1">
+                                <i data-feather="map-pin" class="map-pin" width="16" height="16"></i>
+                                <span class="ms-1 fs-7 text-truncate">
                                     Chicago, Illinois
                                 </span>
                             </div>
-                            <p class="font-merriweather fs-7 text-truncate-2">Modern urban loft with industrial chic
+                            <p class="fs-7 text-truncate-2">Modern urban loft with industrial chic
                                 design. Ideal for city explorers and business travelers.</p>
                         </div>
                     </a>
@@ -207,21 +392,21 @@
                         </div>
                         <div class="card-body px-0 py-2">
                             <div class="d-flex align-items-center justify-content-between">
-                                <span class="fw-bolder">
+                                <span class="fw-bolder fs-7">
                                     <span class="fs-4">$400</span> / Day
                                 </span>
-                                <span class="d-flex align-items-center font-merriweather">
+                                <span class="d-flex align-items-center ">
                                     <i data-feather="star" width="16" height="16" class="rating-star"></i>
                                     <span class="fw-bold ms-1">4.9</span>
                                 </span>
                             </div>
-                            <div class="d-flex align-items-center text-secondary py-1">
-                                <i data-feather="map-pin" width="16" height="16"></i>
-                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                            <div class="d-flex align-items-center text-muted py-1">
+                                <i data-feather="map-pin" class="map-pin" width="16" height="16"></i>
+                                <span class="ms-1 fs-7 text-truncate">
                                     Bali, Indonesia
                                 </span>
                             </div>
-                            <p class="font-merriweather fs-7 text-truncate-2">Luxurious tropical resort with private
+                            <p class="fs-7 text-truncate-2">Luxurious tropical resort with private
                                 pool. Perfect for those seeking ultimate relaxation and exotic experiences.</p>
                         </div>
                     </a>
@@ -240,21 +425,21 @@
                         </div>
                         <div class="card-body px-0 py-2">
                             <div class="d-flex align-items-center justify-content-between">
-                                <span class="fw-bolder">
+                                <span class="fw-bolder fs-7">
                                     <span class="fs-4">$250</span> / Day
                                 </span>
-                                <span class="d-flex align-items-center font-merriweather">
+                                <span class="d-flex align-items-center ">
                                     <i data-feather="star" width="16" height="16" class="rating-star"></i>
                                     <span class="fw-bold ms-1">4.7</span>
                                 </span>
                             </div>
-                            <div class="d-flex align-items-center text-secondary py-1">
-                                <i data-feather="map-pin" width="16" height="16"></i>
-                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                            <div class="d-flex align-items-center text-muted py-1">
+                                <i data-feather="map-pin" class="map-pin" width="16" height="16"></i>
+                                <span class="ms-1 fs-7 text-truncate">
                                     Boston, Massachusetts
                                 </span>
                             </div>
-                            <p class="font-merriweather fs-7 text-truncate-2">Charming historic townhouse in the heart
+                            <p class="fs-7 text-truncate-2">Charming historic townhouse in the heart
                                 of Boston. Ideal for history buffs and those seeking a unique urban experience.</p>
                         </div>
                     </a>
@@ -273,21 +458,21 @@
                         </div>
                         <div class="card-body px-0 py-2">
                             <div class="d-flex align-items-center justify-content-between">
-                                <span class="fw-bolder">
+                                <span class="fw-bolder fs-7">
                                     <span class="fs-4">$150</span> / Day
                                 </span>
-                                <span class="d-flex align-items-center font-merriweather">
+                                <span class="d-flex align-items-center ">
                                     <i data-feather="star" width="16" height="16" class="rating-star"></i>
                                     <span class="fw-bold ms-1">4.6</span>
                                 </span>
                             </div>
-                            <div class="d-flex align-items-center text-secondary py-1">
-                                <i data-feather="map-pin" width="16" height="16"></i>
-                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                            <div class="d-flex align-items-center text-muted py-1">
+                                <i data-feather="map-pin" class="map-pin" width="16" height="16"></i>
+                                <span class="ms-1 fs-7 text-truncate">
                                     Yellowstone, Wyoming
                                 </span>
                             </div>
-                            <p class="font-merriweather fs-7 text-truncate-2">Charming rustic cabin nestled in the
+                            <p class="fs-7 text-truncate-2">Charming rustic cabin nestled in the
                                 woods. Perfect for nature enthusiasts and those seeking a peaceful retreat.</p>
                         </div>
                     </a>
@@ -306,21 +491,21 @@
                         </div>
                         <div class="card-body px-0 py-2">
                             <div class="d-flex align-items-center justify-content-between">
-                                <span class="fw-bolder">
+                                <span class="fw-bolder fs-7">
                                     <span class="fs-4">$180</span> / Day
                                 </span>
-                                <span class="d-flex align-items-center font-merriweather">
+                                <span class="d-flex align-items-center ">
                                     <i data-feather="star" width="16" height="16" class="rating-star"></i>
                                     <span class="fw-bold ms-1">4.5</span>
                                 </span>
                             </div>
-                            <div class="d-flex align-items-center text-secondary py-1">
-                                <i data-feather="map-pin" width="16" height="16"></i>
-                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                            <div class="d-flex align-items-center text-muted py-1">
+                                <i data-feather="map-pin" class="map-pin" width="16" height="16"></i>
+                                <span class="ms-1 fs-7 text-truncate">
                                     Chicago, Illinois
                                 </span>
                             </div>
-                            <p class="font-merriweather fs-7 text-truncate-2">Modern urban loft with industrial chic
+                            <p class="fs-7 text-truncate-2">Modern urban loft with industrial chic
                                 design. Ideal for city explorers and business travelers.</p>
                         </div>
                     </a>
@@ -339,21 +524,21 @@
                         </div>
                         <div class="card-body px-0 py-2">
                             <div class="d-flex align-items-center justify-content-between">
-                                <span class="fw-bolder">
+                                <span class="fw-bolder fs-7">
                                     <span class="fs-4">$400</span> / Day
                                 </span>
-                                <span class="d-flex align-items-center font-merriweather">
+                                <span class="d-flex align-items-center ">
                                     <i data-feather="star" width="16" height="16" class="rating-star"></i>
                                     <span class="fw-bold ms-1">4.9</span>
                                 </span>
                             </div>
-                            <div class="d-flex align-items-center text-secondary py-1">
-                                <i data-feather="map-pin" width="16" height="16"></i>
-                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                            <div class="d-flex align-items-center text-muted py-1">
+                                <i data-feather="map-pin" class="map-pin" width="16" height="16"></i>
+                                <span class="ms-1 fs-7 text-truncate">
                                     Bali, Indonesia
                                 </span>
                             </div>
-                            <p class="font-merriweather fs-7 text-truncate-2">Luxurious tropical resort with private
+                            <p class="fs-7 text-truncate-2">Luxurious tropical resort with private
                                 pool. Perfect for those seeking ultimate relaxation and exotic experiences.</p>
                         </div>
                     </a>
@@ -372,21 +557,21 @@
                         </div>
                         <div class="card-body px-0 py-2">
                             <div class="d-flex align-items-center justify-content-between">
-                                <span class="fw-bolder">
+                                <span class="fw-bolder fs-7">
                                     <span class="fs-4">$250</span> / Day
                                 </span>
-                                <span class="d-flex align-items-center font-merriweather">
+                                <span class="d-flex align-items-center ">
                                     <i data-feather="star" width="16" height="16" class="rating-star"></i>
                                     <span class="fw-bold ms-1">4.7</span>
                                 </span>
                             </div>
-                            <div class="d-flex align-items-center text-secondary py-1">
-                                <i data-feather="map-pin" width="16" height="16"></i>
-                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                            <div class="d-flex align-items-center text-muted py-1">
+                                <i data-feather="map-pin" class="map-pin" width="16" height="16"></i>
+                                <span class="ms-1 fs-7 text-truncate">
                                     Boston, Massachusetts
                                 </span>
                             </div>
-                            <p class="font-merriweather fs-7 text-truncate-2">Charming historic townhouse in the heart
+                            <p class="fs-7 text-truncate-2">Charming historic townhouse in the heart
                                 of Boston. Ideal for history buffs and those seeking a unique urban experience.</p>
                         </div>
                     </a>
@@ -405,21 +590,21 @@
                         </div>
                         <div class="card-body px-0 py-2">
                             <div class="d-flex align-items-center justify-content-between">
-                                <span class="fw-bolder">
+                                <span class="fw-bolder fs-7">
                                     <span class="fs-4">$150</span> / Day
                                 </span>
-                                <span class="d-flex align-items-center font-merriweather">
+                                <span class="d-flex align-items-center ">
                                     <i data-feather="star" width="16" height="16" class="rating-star"></i>
                                     <span class="fw-bold ms-1">4.6</span>
                                 </span>
                             </div>
-                            <div class="d-flex align-items-center text-secondary py-1">
-                                <i data-feather="map-pin" width="16" height="16"></i>
-                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                            <div class="d-flex align-items-center text-muted py-1">
+                                <i data-feather="map-pin" class="map-pin" width="16" height="16"></i>
+                                <span class="ms-1 fs-7 text-truncate">
                                     Yellowstone, Wyoming
                                 </span>
                             </div>
-                            <p class="font-merriweather fs-7 text-truncate-2">Charming rustic cabin nestled in the
+                            <p class="fs-7 text-truncate-2">Charming rustic cabin nestled in the
                                 woods. Perfect for nature enthusiasts and those seeking a peaceful retreat.</p>
                         </div>
                     </a>
@@ -438,21 +623,21 @@
                         </div>
                         <div class="card-body px-0 py-2">
                             <div class="d-flex align-items-center justify-content-between">
-                                <span class="fw-bolder">
+                                <span class="fw-bolder fs-7">
                                     <span class="fs-4">$180</span> / Day
                                 </span>
-                                <span class="d-flex align-items-center font-merriweather">
+                                <span class="d-flex align-items-center ">
                                     <i data-feather="star" width="16" height="16" class="rating-star"></i>
                                     <span class="fw-bold ms-1">4.5</span>
                                 </span>
                             </div>
-                            <div class="d-flex align-items-center text-secondary py-1">
-                                <i data-feather="map-pin" width="16" height="16"></i>
-                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                            <div class="d-flex align-items-center text-muted py-1">
+                                <i data-feather="map-pin" class="map-pin" width="16" height="16"></i>
+                                <span class="ms-1 fs-7 text-truncate">
                                     Chicago, Illinois
                                 </span>
                             </div>
-                            <p class="font-merriweather fs-7 text-truncate-2">Modern urban loft with industrial chic
+                            <p class="fs-7 text-truncate-2">Modern urban loft with industrial chic
                                 design. Ideal for city explorers and business travelers.</p>
                         </div>
                     </a>
@@ -471,21 +656,21 @@
                         </div>
                         <div class="card-body px-0 py-2">
                             <div class="d-flex align-items-center justify-content-between">
-                                <span class="fw-bolder">
+                                <span class="fw-bolder fs-7">
                                     <span class="fs-4">$400</span> / Day
                                 </span>
-                                <span class="d-flex align-items-center font-merriweather">
+                                <span class="d-flex align-items-center ">
                                     <i data-feather="star" width="16" height="16" class="rating-star"></i>
                                     <span class="fw-bold ms-1">4.9</span>
                                 </span>
                             </div>
-                            <div class="d-flex align-items-center text-secondary py-1">
-                                <i data-feather="map-pin" width="16" height="16"></i>
-                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                            <div class="d-flex align-items-center text-muted py-1">
+                                <i data-feather="map-pin" class="map-pin" width="16" height="16"></i>
+                                <span class="ms-1 fs-7 text-truncate">
                                     Bali, Indonesia
                                 </span>
                             </div>
-                            <p class="font-merriweather fs-7 text-truncate-2">Luxurious tropical resort with private
+                            <p class="fs-7 text-truncate-2">Luxurious tropical resort with private
                                 pool. Perfect for those seeking ultimate relaxation and exotic experiences.</p>
                         </div>
                     </a>
@@ -504,21 +689,21 @@
                         </div>
                         <div class="card-body px-0 py-2">
                             <div class="d-flex align-items-center justify-content-between">
-                                <span class="fw-bolder">
+                                <span class="fw-bolder fs-7">
                                     <span class="fs-4">$250</span> / Day
                                 </span>
-                                <span class="d-flex align-items-center font-merriweather">
+                                <span class="d-flex align-items-center ">
                                     <i data-feather="star" width="16" height="16" class="rating-star"></i>
                                     <span class="fw-bold ms-1">4.7</span>
                                 </span>
                             </div>
-                            <div class="d-flex align-items-center text-secondary py-1">
-                                <i data-feather="map-pin" width="16" height="16"></i>
-                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                            <div class="d-flex align-items-center text-muted py-1">
+                                <i data-feather="map-pin" class="map-pin" width="16" height="16"></i>
+                                <span class="ms-1 fs-7 text-truncate">
                                     Boston, Massachusetts
                                 </span>
                             </div>
-                            <p class="font-merriweather fs-7 text-truncate-2">Charming historic townhouse in the heart
+                            <p class="fs-7 text-truncate-2">Charming historic townhouse in the heart
                                 of Boston. Ideal for history buffs and those seeking a unique urban experience.</p>
                         </div>
                     </a>
@@ -537,21 +722,21 @@
                         </div>
                         <div class="card-body px-0 py-2">
                             <div class="d-flex align-items-center justify-content-between">
-                                <span class="fw-bolder">
+                                <span class="fw-bolder fs-7">
                                     <span class="fs-4">$150</span> / Day
                                 </span>
-                                <span class="d-flex align-items-center font-merriweather">
+                                <span class="d-flex align-items-center ">
                                     <i data-feather="star" width="16" height="16" class="rating-star"></i>
                                     <span class="fw-bold ms-1">4.6</span>
                                 </span>
                             </div>
-                            <div class="d-flex align-items-center text-secondary py-1">
-                                <i data-feather="map-pin" width="16" height="16"></i>
-                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                            <div class="d-flex align-items-center text-muted py-1">
+                                <i data-feather="map-pin" class="map-pin" width="16" height="16"></i>
+                                <span class="ms-1 fs-7 text-truncate">
                                     Yellowstone, Wyoming
                                 </span>
                             </div>
-                            <p class="font-merriweather fs-7 text-truncate-2">Charming rustic cabin nestled in the
+                            <p class="fs-7 text-truncate-2">Charming rustic cabin nestled in the
                                 woods. Perfect for nature enthusiasts and those seeking a peaceful retreat.</p>
                         </div>
                     </a>
@@ -570,21 +755,21 @@
                         </div>
                         <div class="card-body px-0 py-2">
                             <div class="d-flex align-items-center justify-content-between">
-                                <span class="fw-bolder">
+                                <span class="fw-bolder fs-7">
                                     <span class="fs-4">$180</span> / Day
                                 </span>
-                                <span class="d-flex align-items-center font-merriweather">
+                                <span class="d-flex align-items-center ">
                                     <i data-feather="star" width="16" height="16" class="rating-star"></i>
                                     <span class="fw-bold ms-1">4.5</span>
                                 </span>
                             </div>
-                            <div class="d-flex align-items-center text-secondary py-1">
-                                <i data-feather="map-pin" width="16" height="16"></i>
-                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                            <div class="d-flex align-items-center text-muted py-1">
+                                <i data-feather="map-pin" class="map-pin" width="16" height="16"></i>
+                                <span class="ms-1 fs-7 text-truncate">
                                     Chicago, Illinois
                                 </span>
                             </div>
-                            <p class="font-merriweather fs-7 text-truncate-2">Modern urban loft with industrial chic
+                            <p class="fs-7 text-truncate-2">Modern urban loft with industrial chic
                                 design. Ideal for city explorers and business travelers.</p>
                         </div>
                     </a>
@@ -603,21 +788,21 @@
                         </div>
                         <div class="card-body px-0 py-2">
                             <div class="d-flex align-items-center justify-content-between">
-                                <span class="fw-bolder">
+                                <span class="fw-bolder fs-7">
                                     <span class="fs-4">$400</span> / Day
                                 </span>
-                                <span class="d-flex align-items-center font-merriweather">
+                                <span class="d-flex align-items-center ">
                                     <i data-feather="star" width="16" height="16" class="rating-star"></i>
                                     <span class="fw-bold ms-1">4.9</span>
                                 </span>
                             </div>
-                            <div class="d-flex align-items-center text-secondary py-1">
-                                <i data-feather="map-pin" width="16" height="16"></i>
-                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                            <div class="d-flex align-items-center text-muted py-1">
+                                <i data-feather="map-pin" class="map-pin" width="16" height="16"></i>
+                                <span class="ms-1 fs-7 text-truncate">
                                     Bali, Indonesia
                                 </span>
                             </div>
-                            <p class="font-merriweather fs-7 text-truncate-2">Luxurious tropical resort with private
+                            <p class="fs-7 text-truncate-2">Luxurious tropical resort with private
                                 pool. Perfect for those seeking ultimate relaxation and exotic experiences.</p>
                         </div>
                     </a>
@@ -636,21 +821,21 @@
                         </div>
                         <div class="card-body px-0 py-2">
                             <div class="d-flex align-items-center justify-content-between">
-                                <span class="fw-bolder">
+                                <span class="fw-bolder fs-7">
                                     <span class="fs-4">$250</span> / Day
                                 </span>
-                                <span class="d-flex align-items-center font-merriweather">
+                                <span class="d-flex align-items-center ">
                                     <i data-feather="star" width="16" height="16" class="rating-star"></i>
                                     <span class="fw-bold ms-1">4.7</span>
                                 </span>
                             </div>
-                            <div class="d-flex align-items-center text-secondary py-1">
-                                <i data-feather="map-pin" width="16" height="16"></i>
-                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                            <div class="d-flex align-items-center text-muted py-1">
+                                <i data-feather="map-pin" class="map-pin" width="16" height="16"></i>
+                                <span class="ms-1 fs-7 text-truncate">
                                     Boston, Massachusetts
                                 </span>
                             </div>
-                            <p class="font-merriweather fs-7 text-truncate-2">Charming historic townhouse in the heart
+                            <p class="fs-7 text-truncate-2">Charming historic townhouse in the heart
                                 of Boston. Ideal for history buffs and those seeking a unique urban experience.</p>
                         </div>
                     </a>
@@ -669,21 +854,21 @@
                         </div>
                         <div class="card-body px-0 py-2">
                             <div class="d-flex align-items-center justify-content-between">
-                                <span class="fw-bolder">
+                                <span class="fw-bolder fs-7">
                                     <span class="fs-4">$150</span> / Day
                                 </span>
-                                <span class="d-flex align-items-center font-merriweather">
+                                <span class="d-flex align-items-center ">
                                     <i data-feather="star" width="16" height="16" class="rating-star"></i>
                                     <span class="fw-bold ms-1">4.6</span>
                                 </span>
                             </div>
-                            <div class="d-flex align-items-center text-secondary py-1">
-                                <i data-feather="map-pin" width="16" height="16"></i>
-                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                            <div class="d-flex align-items-center text-muted py-1">
+                                <i data-feather="map-pin" class="map-pin" width="16" height="16"></i>
+                                <span class="ms-1 fs-7 text-truncate">
                                     Yellowstone, Wyoming
                                 </span>
                             </div>
-                            <p class="font-merriweather fs-7 text-truncate-2">Charming rustic cabin nestled in the
+                            <p class="fs-7 text-truncate-2">Charming rustic cabin nestled in the
                                 woods. Perfect for nature enthusiasts and those seeking a peaceful retreat.</p>
                         </div>
                     </a>
@@ -702,21 +887,21 @@
                         </div>
                         <div class="card-body px-0 py-2">
                             <div class="d-flex align-items-center justify-content-between">
-                                <span class="fw-bolder">
+                                <span class="fw-bolder fs-7">
                                     <span class="fs-4">$180</span> / Day
                                 </span>
-                                <span class="d-flex align-items-center font-merriweather">
+                                <span class="d-flex align-items-center ">
                                     <i data-feather="star" width="16" height="16" class="rating-star"></i>
                                     <span class="fw-bold ms-1">4.5</span>
                                 </span>
                             </div>
-                            <div class="d-flex align-items-center text-secondary py-1">
-                                <i data-feather="map-pin" width="16" height="16"></i>
-                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                            <div class="d-flex align-items-center text-muted py-1">
+                                <i data-feather="map-pin" class="map-pin" width="16" height="16"></i>
+                                <span class="ms-1 fs-7 text-truncate">
                                     Chicago, Illinois
                                 </span>
                             </div>
-                            <p class="font-merriweather fs-7 text-truncate-2">Modern urban loft with industrial chic
+                            <p class="fs-7 text-truncate-2">Modern urban loft with industrial chic
                                 design. Ideal for city explorers and business travelers.</p>
                         </div>
                     </a>
@@ -735,21 +920,21 @@
                         </div>
                         <div class="card-body px-0 py-2">
                             <div class="d-flex align-items-center justify-content-between">
-                                <span class="fw-bolder">
+                                <span class="fw-bolder fs-7">
                                     <span class="fs-4">$400</span> / Day
                                 </span>
-                                <span class="d-flex align-items-center font-merriweather">
+                                <span class="d-flex align-items-center ">
                                     <i data-feather="star" width="16" height="16" class="rating-star"></i>
                                     <span class="fw-bold ms-1">4.9</span>
                                 </span>
                             </div>
-                            <div class="d-flex align-items-center text-secondary py-1">
-                                <i data-feather="map-pin" width="16" height="16"></i>
-                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                            <div class="d-flex align-items-center text-muted py-1">
+                                <i data-feather="map-pin" class="map-pin" width="16" height="16"></i>
+                                <span class="ms-1 fs-7 text-truncate">
                                     Bali, Indonesia
                                 </span>
                             </div>
-                            <p class="font-merriweather fs-7 text-truncate-2">Luxurious tropical resort with private
+                            <p class="fs-7 text-truncate-2">Luxurious tropical resort with private
                                 pool. Perfect for those seeking ultimate relaxation and exotic experiences.</p>
                         </div>
                     </a>
@@ -768,21 +953,21 @@
                         </div>
                         <div class="card-body px-0 py-2">
                             <div class="d-flex align-items-center justify-content-between">
-                                <span class="fw-bolder">
+                                <span class="fw-bolder fs-7">
                                     <span class="fs-4">$250</span> / Day
                                 </span>
-                                <span class="d-flex align-items-center font-merriweather">
+                                <span class="d-flex align-items-center ">
                                     <i data-feather="star" width="16" height="16" class="rating-star"></i>
                                     <span class="fw-bold ms-1">4.7</span>
                                 </span>
                             </div>
-                            <div class="d-flex align-items-center text-secondary py-1">
-                                <i data-feather="map-pin" width="16" height="16"></i>
-                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                            <div class="d-flex align-items-center text-muted py-1">
+                                <i data-feather="map-pin" class="map-pin" width="16" height="16"></i>
+                                <span class="ms-1 fs-7 text-truncate">
                                     Boston, Massachusetts
                                 </span>
                             </div>
-                            <p class="font-merriweather fs-7 text-truncate-2">Charming historic townhouse in the heart
+                            <p class="fs-7 text-truncate-2">Charming historic townhouse in the heart
                                 of Boston. Ideal for history buffs and those seeking a unique urban experience.</p>
                         </div>
                     </a>
@@ -801,21 +986,21 @@
                         </div>
                         <div class="card-body px-0 py-2">
                             <div class="d-flex align-items-center justify-content-between">
-                                <span class="fw-bolder">
+                                <span class="fw-bolder fs-7">
                                     <span class="fs-4">$150</span> / Day
                                 </span>
-                                <span class="d-flex align-items-center font-merriweather">
+                                <span class="d-flex align-items-center ">
                                     <i data-feather="star" width="16" height="16" class="rating-star"></i>
                                     <span class="fw-bold ms-1">4.6</span>
                                 </span>
                             </div>
-                            <div class="d-flex align-items-center text-secondary py-1">
-                                <i data-feather="map-pin" width="16" height="16"></i>
-                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                            <div class="d-flex align-items-center text-muted py-1">
+                                <i data-feather="map-pin" class="map-pin" width="16" height="16"></i>
+                                <span class="ms-1 fs-7 text-truncate">
                                     Yellowstone, Wyoming
                                 </span>
                             </div>
-                            <p class="font-merriweather fs-7 text-truncate-2">Charming rustic cabin nestled in the
+                            <p class="fs-7 text-truncate-2">Charming rustic cabin nestled in the
                                 woods. Perfect for nature enthusiasts and those seeking a peaceful retreat.</p>
                         </div>
                     </a>
@@ -834,21 +1019,21 @@
                         </div>
                         <div class="card-body px-0 py-2">
                             <div class="d-flex align-items-center justify-content-between">
-                                <span class="fw-bolder">
+                                <span class="fw-bolder fs-7">
                                     <span class="fs-4">$180</span> / Day
                                 </span>
-                                <span class="d-flex align-items-center font-merriweather">
+                                <span class="d-flex align-items-center ">
                                     <i data-feather="star" width="16" height="16" class="rating-star"></i>
                                     <span class="fw-bold ms-1">4.5</span>
                                 </span>
                             </div>
-                            <div class="d-flex align-items-center text-secondary py-1">
-                                <i data-feather="map-pin" width="16" height="16"></i>
-                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                            <div class="d-flex align-items-center text-muted py-1">
+                                <i data-feather="map-pin" class="map-pin" width="16" height="16"></i>
+                                <span class="ms-1 fs-7 text-truncate">
                                     Chicago, Illinois
                                 </span>
                             </div>
-                            <p class="font-merriweather fs-7 text-truncate-2">Modern urban loft with industrial chic
+                            <p class="fs-7 text-truncate-2">Modern urban loft with industrial chic
                                 design. Ideal for city explorers and business travelers.</p>
                         </div>
                     </a>
@@ -867,21 +1052,21 @@
                         </div>
                         <div class="card-body px-0 py-2">
                             <div class="d-flex align-items-center justify-content-between">
-                                <span class="fw-bolder">
+                                <span class="fw-bolder fs-7">
                                     <span class="fs-4">$400</span> / Day
                                 </span>
-                                <span class="d-flex align-items-center font-merriweather">
+                                <span class="d-flex align-items-center ">
                                     <i data-feather="star" width="16" height="16" class="rating-star"></i>
                                     <span class="fw-bold ms-1">4.9</span>
                                 </span>
                             </div>
-                            <div class="d-flex align-items-center text-secondary py-1">
-                                <i data-feather="map-pin" width="16" height="16"></i>
-                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                            <div class="d-flex align-items-center text-muted py-1">
+                                <i data-feather="map-pin" class="map-pin" width="16" height="16"></i>
+                                <span class="ms-1 fs-7 text-truncate">
                                     Bali, Indonesia
                                 </span>
                             </div>
-                            <p class="font-merriweather fs-7 text-truncate-2">Luxurious tropical resort with private
+                            <p class="fs-7 text-truncate-2">Luxurious tropical resort with private
                                 pool. Perfect for those seeking ultimate relaxation and exotic experiences.</p>
                         </div>
                     </a>
@@ -900,21 +1085,21 @@
                         </div>
                         <div class="card-body px-0 py-2">
                             <div class="d-flex align-items-center justify-content-between">
-                                <span class="fw-bolder">
+                                <span class="fw-bolder fs-7">
                                     <span class="fs-4">$250</span> / Day
                                 </span>
-                                <span class="d-flex align-items-center font-merriweather">
+                                <span class="d-flex align-items-center ">
                                     <i data-feather="star" width="16" height="16" class="rating-star"></i>
                                     <span class="fw-bold ms-1">4.7</span>
                                 </span>
                             </div>
-                            <div class="d-flex align-items-center text-secondary py-1">
-                                <i data-feather="map-pin" width="16" height="16"></i>
-                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                            <div class="d-flex align-items-center text-muted py-1">
+                                <i data-feather="map-pin" class="map-pin" width="16" height="16"></i>
+                                <span class="ms-1 fs-7 text-truncate">
                                     Boston, Massachusetts
                                 </span>
                             </div>
-                            <p class="font-merriweather fs-7 text-truncate-2">Charming historic townhouse in the heart
+                            <p class="fs-7 text-truncate-2">Charming historic townhouse in the heart
                                 of Boston. Ideal for history buffs and those seeking a unique urban experience.</p>
                         </div>
                     </a>
@@ -933,21 +1118,21 @@
                         </div>
                         <div class="card-body px-0 py-2">
                             <div class="d-flex align-items-center justify-content-between">
-                                <span class="fw-bolder">
+                                <span class="fw-bolder fs-7">
                                     <span class="fs-4">$150</span> / Day
                                 </span>
-                                <span class="d-flex align-items-center font-merriweather">
+                                <span class="d-flex align-items-center ">
                                     <i data-feather="star" width="16" height="16" class="rating-star"></i>
                                     <span class="fw-bold ms-1">4.6</span>
                                 </span>
                             </div>
-                            <div class="d-flex align-items-center text-secondary py-1">
-                                <i data-feather="map-pin" width="16" height="16"></i>
-                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                            <div class="d-flex align-items-center text-muted py-1">
+                                <i data-feather="map-pin" class="map-pin" width="16" height="16"></i>
+                                <span class="ms-1 fs-7 text-truncate">
                                     Yellowstone, Wyoming
                                 </span>
                             </div>
-                            <p class="font-merriweather fs-7 text-truncate-2">Charming rustic cabin nestled in the
+                            <p class="fs-7 text-truncate-2">Charming rustic cabin nestled in the
                                 woods. Perfect for nature enthusiasts and those seeking a peaceful retreat.</p>
                         </div>
                     </a>
@@ -966,21 +1151,21 @@
                         </div>
                         <div class="card-body px-0 py-2">
                             <div class="d-flex align-items-center justify-content-between">
-                                <span class="fw-bolder">
+                                <span class="fw-bolder fs-7">
                                     <span class="fs-4">$180</span> / Day
                                 </span>
-                                <span class="d-flex align-items-center font-merriweather">
+                                <span class="d-flex align-items-center ">
                                     <i data-feather="star" width="16" height="16" class="rating-star"></i>
                                     <span class="fw-bold ms-1">4.5</span>
                                 </span>
                             </div>
-                            <div class="d-flex align-items-center text-secondary py-1">
-                                <i data-feather="map-pin" width="16" height="16"></i>
-                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                            <div class="d-flex align-items-center text-muted py-1">
+                                <i data-feather="map-pin" class="map-pin" width="16" height="16"></i>
+                                <span class="ms-1 fs-7 text-truncate">
                                     Chicago, Illinois
                                 </span>
                             </div>
-                            <p class="font-merriweather fs-7 text-truncate-2">Modern urban loft with industrial chic
+                            <p class="fs-7 text-truncate-2">Modern urban loft with industrial chic
                                 design. Ideal for city explorers and business travelers.</p>
                         </div>
                     </a>
@@ -999,33 +1184,44 @@
                         </div>
                         <div class="card-body px-0 py-2">
                             <div class="d-flex align-items-center justify-content-between">
-                                <span class="fw-bolder">
+                                <span class="fw-bolder fs-7">
                                     <span class="fs-4">$400</span> / Day
                                 </span>
-                                <span class="d-flex align-items-center font-merriweather">
+                                <span class="d-flex align-items-center ">
                                     <i data-feather="star" width="16" height="16" class="rating-star"></i>
                                     <span class="fw-bold ms-1">4.9</span>
                                 </span>
                             </div>
-                            <div class="d-flex align-items-center text-secondary py-1">
-                                <i data-feather="map-pin" width="16" height="16"></i>
-                                <span class="fw-bold ms-1 fs-7 text-truncate">
+                            <div class="d-flex align-items-center text-muted py-1">
+                                <i data-feather="map-pin" class="map-pin" width="16" height="16"></i>
+                                <span class="ms-1 fs-7 text-truncate">
                                     Bali, Indonesia
                                 </span>
                             </div>
-                            <p class="font-merriweather fs-7 text-truncate-2">Luxurious tropical resort with private
+                            <p class="fs-7 text-truncate-2">Luxurious tropical resort with private
                                 pool. Perfect for those seeking ultimate relaxation and exotic experiences.</p>
                         </div>
                     </a>
                 </div>
             </div>
     </main>
+
+    <footer class="border-top py-4">
+        <div class="container-xl px-4">
+            <select data-placeholder="Language" id="language-select">
+                <option value=""></option>
+                <option value="English" selected>English</option>
+                <option value="Arabic">Arabic</option>
+            </select>
+        </div>
+    </footer>
 </body>
 
 <script src="./assets/js/bootstrap.bundle.min.js"></script>
 <script src="./assets/js/jquery-3.7.1.min.js"></script>
 <script src="./assets/js/swiper-bundle.min.js"></script>
 <script src="./assets/js/feather.min.js"></script>
+<script src="./assets/js/chosen.jquery.min.js"></script>
 <script src="./assets/js/main.js"></script>
 
 </html>
